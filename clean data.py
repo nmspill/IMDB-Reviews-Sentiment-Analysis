@@ -35,7 +35,8 @@ def get_adj_list(str):
 
 positive_words = get_words('data\\positive words.txt')
 negative_words = get_words('data\\negative words.txt')
-reviews = pd.read_csv('data\IMDB Dataset.csv')
+reviews = pd.read_csv('data\\IMDB Dataset.csv')
+
 
 positive_word_count = []
 negative_word_count = []
@@ -44,7 +45,7 @@ review_type = []
 for index, row in reviews.iterrows():
     adj_list = get_adj_list(row['review'])
     positive_word_count.append(get_scores(adj_list, positive_words, negative_words)['Positive']) 
-    positive_word_count.append(get_scores(adj_list, positive_words, negative_words)['Negative'])
+    negative_word_count.append(get_scores(adj_list, positive_words, negative_words)['Negative'])
 
     if row['sentiment'] == 'positive':
         review_type.append('1')
