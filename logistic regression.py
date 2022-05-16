@@ -5,7 +5,7 @@ import pandas as pd
 
 
 data = pd.read_csv('data\\features.csv')
-features = ['positive adj count', 'negative adj count']
+features = ['positive adj count','negative adj count','word count','contains !',"contains 'no'"]
 X = data[features] # Features
 y = data['sentiment'] # Target variable
 
