@@ -34,13 +34,3 @@ print('Recall:', cv_results['test_recall'].mean())
 
 cm_displayed.plot(values_format='.1f')
 plt.show()
-
-
-
-
-
-
-
-
-
-

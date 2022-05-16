@@ -1,14 +1,15 @@
+How to Run:
+    - Install the depedencies below
+    - Run 'clean data.py' in order to generate the features used to train the models (results are already generated and can be found in data\features.csv)
+    - Run 'logistic regression.py' to train the Logistic Regression model and evaluate using 10 fold cross validation
+    - Run 'naiveBayes.py' to train the Multinomial Naive Bayes model and evaluate using 10 fold cross validation
+
 Dependecies: 
-
-
-
-
-
-
-
-
-
-
+    - matplotlib 3.3.4
+    - pandas 1.2.1
+    - numpy 1.19.5
+    - nltk 3.7
+    - scikit-learn 0.24.1
 
 Resources Used:
 

@@ -27,7 +27,6 @@ cv_results = cross_validate(multinomNB, X, y, cv=10,scoring=scoring_metrics)
 cm = np.array([[cv_results['test_tp'].mean(), cv_results['test_fp'].mean()], [cv_results['test_fn'].mean(), cv_results['test_tn'].mean()]])
 cm_displayed = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=[0, 1])
 
-
 print('Accuracy:', cv_results['test_accuracy'].mean())
 print('Precision:', cv_results['test_precision'].mean())
 print('Recall:', cv_results['test_recall'].mean())
