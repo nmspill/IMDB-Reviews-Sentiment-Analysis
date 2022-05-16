@@ -1,3 +1,7 @@
+Authors:
+    - Nolan Spillane
+    - Patrick Cappello
+
 How to Run:
     - Install the depedencies below
     - Run 'clean data.py' in order to generate the features used to train the models (results are already generated and can be found in data\features.csv)

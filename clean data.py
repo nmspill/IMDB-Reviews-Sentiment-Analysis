@@ -4,7 +4,7 @@ import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 import math
 
-
+# Uncomment these 3 lines on the first run
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('stopwords')
 # nltk.download('punkt')
